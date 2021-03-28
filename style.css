@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body{
+    margin: 0;
+    font-family: 'Raleway';
+    font-size: 16px;
+    line-height: 1.8em;
+}
+
+.upper {
+    text-align: center;
+}
+
+.upper img{
+    border-radius: 50%;
+    max-width: 200px;
+}
+
+.education{
+    text-align: center;
+}
+.education ol{
+    margin: 0;
+    padding: 0;
+}
+
+.education ol li {
+    text-align: center;
+    counter-increment: my-awesome-counter;
+}
+
+.education ol li::before {
+    content: counter(my-awesome-counter) ". ";
+    color: red;
+    font-weight: bold;
+}
+
+@media only screen and (max-width:600px) {
+    /*for tablets*/
+    .bio {
+        width: 100%;
+    }
+    .inf {
+        width: 80%;
+    }
+
+}
+    
